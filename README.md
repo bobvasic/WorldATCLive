@@ -1,8 +1,8 @@
-# Interactive World Map Application
+# World ATC Live
 
-🌍 **Enterprise-Grade AI-Powered Geographic Exploration Platform**
+🌍 **Enterprise-Grade AI-Powered Geographic Intelligence Platform**
 
-A premium, production-ready interactive world map featuring **Google Gemini 2.5 Flash AI integration** for intelligent, real-time country insights and travel recommendations.
+**World ATC Live** is a premium, production-ready interactive world map featuring **Google Gemini 2.5 Flash AI integration** for intelligent, real-time country insights and travel recommendations. Click any country to explore AI-generated intelligence, discover TOP 10 must-visit destinations, and analyze your exploration patterns.
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]() [![AI Powered](https://img.shields.io/badge/AI-Gemini%202.5%20Flash-blue)]() [![License](https://img.shields.io/badge/license-MIT-green)]()
 
@@ -247,8 +247,8 @@ User sees AI insights + TOP 10 places
 ### Step 1: Clone Repository
 
 ```bash
-git clone https://github.com/jelenastricak/1stHackaton10-30-2025.git
-cd 1stHackaton10-30-2025
+git clone https://github.com/bobvasic/WorldATCLive.git
+cd WorldATCLive
 ```
 
 ### Step 2: Install Dependencies
@@ -616,15 +616,15 @@ npm run lint
 
 ---
 
-## 🤝 Contributing
+### 🤝 Contributing
 
-We welcome contributions! This hackathon project is open for improvements.
+We welcome contributions to **World ATC Live**! This project is open for improvements.
 
 ### How to Contribute
 
 1. **Fork the repository**
    ```bash
-   git clone https://github.com/jelenastricak/1stHackaton10-30-2025.git
+   git clone https://github.com/bobvasic/WorldATCLive.git
    ```
 
 2. **Create feature branch**
@@ -687,7 +687,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ### Get Help
 
-- **🐛 Report Issues:** [GitHub Issues](https://github.com/jelenastricak/1stHackaton10-30-2025/issues)
+- **🐛 Report Issues:** [GitHub Issues](https://github.com/bobvasic/WorldATCLive/issues)
 - **📚 Read Docs:** [AI Setup Guide](./AI_SETUP_GUIDE.md)
 - **❓ FAQ:** [API Status Report](./API_STATUS_REPORT.md)
 - **🚀 Quick Start:** [Quick Start Guide](./QUICK_START.md)
@@ -744,12 +744,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <div align="center">
 
-### 🌍 **Built with ❤️ for Hackathon 2025**
+### 🌍 **World ATC Live - Built with ❤️ for Hackathon 2025**
 
-**Enterprise-Grade AI-Powered Geographic Exploration**
+**Enterprise-Grade AI-Powered Geographic Intelligence**
 
-[Get Started](#-quick-start) • [Documentation](./AI_SETUP_GUIDE.md) • [Report Bug](https://github.com/jelenastricak/1stHackaton10-30-2025/issues)
+[Get Started](#-quick-start) • [Documentation](./AI_SETUP_GUIDE.md) • [Report Bug](https://github.com/bobvasic/WorldATCLive/issues)
 
-© 2025 Bob Vasic, Jelena Stricak • Powered by Google Gemini AI
+© 2025 Bob Vasic • World ATC Live • Powered by Google Gemini AI
 
 </div>

@@ -1,7 +1,7 @@
-# 🤖 AI-Enhanced World Map - Setup Guide
+# 🤖 World ATC Live - AI Setup Guide
 
 ## Overview
-This application has been upgraded with **Google Gemini AI integration** providing intelligent, AI-powered features including country information, travel recommendations, user behavior analysis, and real-time performance monitoring.
+**World ATC Live** is an AI-powered geographic intelligence platform with **Google Gemini AI integration** providing intelligent features including real-time country information, TOP 10 travel recommendations, user behavior analysis, and performance monitoring.
 
 ---
 

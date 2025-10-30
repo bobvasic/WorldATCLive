@@ -1,8 +1,9 @@
 {
-  "name": "hackaton",
+  "name": "world-atc-live",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "AI-Powered Geographic Intelligence Platform with Google Gemini Integration",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

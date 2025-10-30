@@ -1,4 +1,4 @@
-# ⚡ Quick Start Guide
+# ⚡ World ATC Live - Quick Start Guide
 
 ## 🎯 Get Running in 3 Steps
 

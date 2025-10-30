@@ -1,8 +1,8 @@
 # 📚 Documentation Index
 
-**Interactive World Map - AI-Enhanced Edition**
+**World ATC Live - AI-Powered Geographic Intelligence Platform**
 
-Complete guide to all project documentation and resources.
+Complete guide to all project documentation and resources for World ATC Live.
 
 ---
 
@@ -355,7 +355,7 @@ npm run lint
 - **Gemini API Docs:** https://ai.google.dev/docs
 - **Get API Key:** https://aistudio.google.com/app/apikey
 - **Usage Dashboard:** https://ai.google.dev/usage
-- **GitHub Repo:** https://github.com/jelenastricak/1stHackaton10-30-2025
+- **GitHub Repo:** https://github.com/bobvasic/WorldATCLive
 
 ---
 

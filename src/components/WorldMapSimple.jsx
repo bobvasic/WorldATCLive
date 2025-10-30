@@ -1,9 +1,9 @@
 import { useRef, useState, useCallback, useMemo } from 'react';
 import Map, { Source, Layer } from 'react-map-gl/maplibre';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
-const WorldMapSimple = () => {
+const WorldMapSimple = ({ onCountryClick, onCountryHover }) => {
   const mapRef = useRef();
   const [hoveredCountry, setHoveredCountry] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -32,18 +32,29 @@ const WorldMapSimple = () => {
   const onHover = useCallback((event) => {
     const feature = event.features && event.features[0];
     if (feature) {
-      setHoveredCountry(feature.properties.name || feature.properties.NAME);
+      const countryName = feature.properties.name || feature.properties.NAME;
+      setHoveredCountry(countryName);
+      if (onCountryHover) onCountryHover(countryName);
     } else {
       setHoveredCountry(null);
+      if (onCountryHover) onCountryHover(null);
     }
-  }, []);
+  }, [onCountryHover]);
 
   const onMapLoad = useCallback(() => {
     setIsLoaded(true);
   }, []);
 
+  const onClick = useCallback((event) => {
+    const feature = event.features && event.features[0];
+    if (feature && onCountryClick) {
+      const countryName = feature.properties.name || feature.properties.NAME;
+      onCountryClick(countryName);
+    }
+  }, [onCountryClick]);
+
   return (
-    <motion.div
+    <Motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
@@ -56,12 +67,17 @@ const WorldMapSimple = () => {
         mapStyle={mapStyle}
         interactiveLayerIds={['countries-fill']}
         onMouseMove={onHover}
-        onMouseLeave={useCallback(() => setHoveredCountry(null), [])}
+        onMouseLeave={useCallback(() => {
+          setHoveredCountry(null);
+          if (onCountryHover) onCountryHover(null);
+        }, [onCountryHover])}
+        onClick={onClick}
         onLoad={onMapLoad}
         reuseMaps
         preserveDrawingBuffer={true}
         attributionControl={false}
         antialias={true}
+        cursor={hoveredCountry ? 'pointer' : 'grab'}
       >
         {isLoaded && (
           <Source
@@ -101,7 +117,7 @@ const WorldMapSimple = () => {
       </Map>
 
       {hoveredCountry && (
-        <motion.div
+        <Motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0 }}
@@ -109,9 +125,9 @@ const WorldMapSimple = () => {
           className="country-tooltip"
         >
           {hoveredCountry}
-        </motion.div>
+        </Motion.div>
       )}
-    </motion.div>
+    </Motion.div>
   );
 };
 

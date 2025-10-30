@@ -24,7 +24,7 @@ VITE_GEMINI_API_KEY=YOUR_API_KEY_HERE
 
 **Example:**
 ```bash
-VITE_GEMINI_API_KEY=AIzaSyBk7FH3jKl9mPqRsT2vW8xYzAbCdEfGhIj
+VITE_GEMINI_API_KEY=your_actual_api_key_from_google_ai_studio
 ```
 
 ### 3. Start the Application

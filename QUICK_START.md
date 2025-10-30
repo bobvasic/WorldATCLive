@@ -11,7 +11,7 @@
 ### Step 2: Add API Key (30 seconds)
 Open `.env.local` and paste your key:
 ```bash
-VITE_GEMINI_API_KEY=AIzaSyBk7FH3jKl9mPqRsT2vW8xYzAbCdEfGhIj
+VITE_GEMINI_API_KEY=your_actual_api_key_here
 ```
 
 ### Step 3: Start the App (30 seconds)
